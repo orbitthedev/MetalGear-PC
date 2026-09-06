@@ -234,25 +234,25 @@ void game_render(void) {
         }
     }
 
-    // Render Snake
+    // Render Snake with sprite (use simple solid color for now)
     for (int py = 0; py < TILE_SIZE; py++) {
         int screen_y = snake.y + py;
         if (screen_y < 192) {
             int vram_offset = screen_y * 128 + (snake.x / 2);
             for (int px = 0; px < TILE_SIZE / 2; px++) {
-                uint8_t byte = (15 << 4) | 15;
+                uint8_t byte = (15 << 4) | 15;  // White
                 vram[vram_offset + px] = byte;
             }
         }
     }
 
-    // Render Guard
+    // Render Guard with sprite (use simple solid color for now)
     for (int py = 0; py < TILE_SIZE; py++) {
         int screen_y = guard.y + py;
         if (screen_y < 192) {
             int vram_offset = screen_y * 128 + (guard.x / 2);
             for (int px = 0; px < TILE_SIZE / 2; px++) {
-                uint8_t byte = (8 << 4) | 8;
+                uint8_t byte = (8 << 4) | 8;  // Red
                 vram[vram_offset + px] = byte;
             }
         }
