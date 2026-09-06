@@ -87,6 +87,9 @@ int main(int argc, char* argv[]) {
                 if (event.key.keysym.sym == SDLK_DOWN) {
                     game_input_down();
                 }
+                if (event.key.keysym.sym == SDLK_SPACE) {
+                    game_next_level();
+                }
             }
         }
 

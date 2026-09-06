@@ -62,4 +62,7 @@ GameState game_get_state(void);
 // Reset game (for when you die)
 void game_reset(void);
 
+// Advance to next level
+void game_next_level(void);
+
 #endif // GAME_H
