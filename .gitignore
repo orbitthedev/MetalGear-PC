@@ -30,3 +30,7 @@ __pycache__/
 *.tmp
 *.bak
 *~
+
+# ROM and asset files (use extractor.py to regenerate from original ROM)
+assets/banks/*.bin
+assets/banks/*.c
