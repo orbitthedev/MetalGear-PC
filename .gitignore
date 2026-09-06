@@ -1,0 +1,32 @@
+# Build directories
+out/
+build/
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj*
+.vscode/
+
+# Compiled binaries
+*.exe
+*.dll
+*.o
+*.a
+*.lib
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+*~
